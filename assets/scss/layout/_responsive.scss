@@ -1,0 +1,161 @@
+// Responsive breakpoints variables
+$small-devices: 576px;
+$medium-devices: 768px;
+$large-devices: 992px;
+$extra-large: 1200px;
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $small-devices) { 
+
+    .inner-central-circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .inner-central-dash {
+        width: 180px;
+        height: 180px;
+    }
+
+    .polygons {
+        width: 240px;
+        height: 240px;
+    }
+
+    .main-inner-circle {
+        height: 244px;
+        width: 244px;
+    }
+
+    .main-circle-dash {
+        height: 270px;
+        width: 270px;
+    }
+
+    .main-outer-circle {
+        height: 285px;
+        width: 285px;
+    }
+
+    .symbol {
+        width: 50px;
+    }
+
+    .brand-logo {
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $medium-devices) { 
+
+    .inner-central-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .inner-central-dash {
+        width: 250px;
+        height: 250px;
+    }
+
+    .polygons {
+        width: 330px;
+        height: 330px;
+    }
+
+    .main-inner-circle {
+        height: 334px;
+        width: 334px;
+    }
+
+    .main-circle-dash {
+        height: 370px;
+        width: 370px;
+    }
+
+    .main-outer-circle {
+        height: 390px;
+        width: 390px;
+    }
+
+    .symbol {
+        width: 70px;
+    }
+
+    .brand-logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $large-devices) { 
+
+    .inner-central-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .inner-central-dash {
+        width: 250px;
+        height: 250px;
+    }
+
+    .polygons {
+        width: 330px;
+        height: 330px;
+    }
+
+    .main-inner-circle {
+        height: 334px;
+        width: 334px;
+    }
+
+    .main-circle-dash {
+        height: 370px;
+        width: 370px;
+    }
+
+    .main-outer-circle {
+        height: 390px;
+        width: 390px;
+    }
+
+    .brand-logo {
+        width: 100px;
+    }
+
+    .symbol {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $extra-large) { 
+    
+ }
