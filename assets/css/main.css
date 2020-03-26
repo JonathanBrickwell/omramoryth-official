@@ -64,11 +64,11 @@ main {
   .symbol {
     width: 50px; }
   .brand-logo {
-    width: 50px; }
+    width: 100px; }
   h1 {
     font-size: 1.2rem; }
   h2 {
-    font-size: 0.7rem; } }
+    font-size: 1rem; } }
 
 @media (min-width: 768px) {
   .inner-central-circle {
@@ -92,7 +92,7 @@ main {
   .symbol {
     width: 70px; }
   .brand-logo {
-    width: 100px; }
+    width: 180px; }
   h1 {
     font-size: 2rem; }
   h2 {
@@ -118,7 +118,7 @@ main {
     height: 390px;
     width: 390px; }
   .brand-logo {
-    width: 100px; }
+    width: 180px; }
   .symbol {
     width: 80px; }
   h1 {
@@ -148,7 +148,24 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center; }
 
 .brand-logo {
-  z-index: 9; }
+  z-index: 9;
+  border-radius: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 70000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 70000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 70000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 70000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 .inner-central-circle {
   border-radius: 50%;
