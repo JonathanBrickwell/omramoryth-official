@@ -21,21 +21,42 @@ main {
   height: 100%; }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%; }
 
 .container-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%; }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px; }
 
 @media (max-width: 576px) {
@@ -139,9 +160,15 @@ h1, h2, h3, h4, h5, h6 {
   -ms-text-size-adjust: 100%; }
 
 .inner-brand-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .brand-logo {
   z-index: 9;
@@ -222,18 +249,6 @@ h1, h2, h3, h4, h5, h6 {
 .img {
   position: absolute; }
 
-@-ms-keyframes spin {
-  from {
-    -ms-transform: rotate(0deg); }
-  to {
-    -ms-transform: rotate(360deg); } }
-
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg); }
@@ -242,21 +257,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes spin {
   from {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   to {
-    transform: rotate(360deg); } }
-
-@-ms-keyframes counterspin {
-  from {
-    -ms-transform: rotate(360deg); }
-  to {
-    -ms-transform: rotate(0deg); } }
-
-@-moz-keyframes counterspin {
-  from {
-    -moz-transform: rotate(360deg); }
-  to {
-    -moz-transform: rotate(0deg); } }
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 @-webkit-keyframes counterspin {
   from {
@@ -266,6 +271,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes counterspin {
   from {
-    transform: rotate(360deg); }
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
   to {
-    transform: rotate(0deg); } }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
