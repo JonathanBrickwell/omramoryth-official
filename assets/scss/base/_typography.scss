@@ -2,8 +2,6 @@
 @import "../abstracts/variables";
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap');
 
 /*------------------------------------*\
     # Simple Typography Settings
@@ -11,8 +9,6 @@
 
 // Font Family
 $font-family-cinzel: 'Cinzel', serif;
-$font-family-cinzel-decorative: 'Cinzel Decorative', cursive;
-$font-family-alegreya: 'Alegreya SC', serif;
 
 // Base Font For HTML
 $base-font-size: 16px;
