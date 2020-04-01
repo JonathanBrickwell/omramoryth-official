@@ -3,11 +3,18 @@
 
 // Make type normal across browsers
 *, html, body {
-    background-color: $bodyBackground;
+    //background-color: $bodyBackground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-image: url(/assets/img/bg/home-hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // Headings Start
