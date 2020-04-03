@@ -60,6 +60,10 @@ main {
   padding: 30px; }
 
 @media (max-width: 576px) {
+  .subtitle-mobile {
+    display: block; }
+  .subtitle-desktop {
+    display: none; }
   .inner-central-circle {
     width: 130px;
     height: 130px; }
@@ -90,6 +94,10 @@ main {
     padding: 15px; } }
 
 @media (min-width: 768px) {
+  .subtitle-mobile {
+    display: none; }
+  .subtitle-desktop {
+    display: block; }
   .inner-central-circle {
     width: 200px;
     height: 200px; }
@@ -120,6 +128,10 @@ main {
     padding: 35px; } }
 
 @media (min-width: 992px) {
+  .subtitle-mobile {
+    display: none; }
+  .subtitle-desktop {
+    display: block; }
   .inner-central-circle {
     width: 200px;
     height: 200px; }
@@ -165,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-text-size-adjust: 100%;
   overflow: hidden; }
 
-body {
+main {
   background-image: url(/assets/img/bg/lovecraft-bg-brown.jpg);
   background-position: center center;
   background-repeat: no-repeat;

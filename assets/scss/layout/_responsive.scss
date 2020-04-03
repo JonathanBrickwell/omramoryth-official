@@ -7,6 +7,14 @@ $extra-large: 1200px;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $small-devices) { 
 
+    .subtitle-mobile {
+        display: block;
+    }
+
+    .subtitle-desktop {
+        display: none;
+    }
+
     .inner-central-circle {
         width: 130px;
         height: 130px;
@@ -61,6 +69,14 @@ $extra-large: 1200px;
 // Medium devices (tablets, 768px and up)
 @media (min-width: $medium-devices) { 
 
+    .subtitle-mobile {
+        display: none;
+    }
+
+    .subtitle-desktop {
+        display: block;
+    }
+
     .inner-central-circle {
         width: 200px;
         height: 200px;
@@ -114,6 +130,14 @@ $extra-large: 1200px;
 
 // Large devices (desktops, 992px and up)
 @media (min-width: $large-devices) { 
+
+    .subtitle-mobile {
+        display: none;
+    }
+
+    .subtitle-desktop {
+        display: block;
+    }
 
     .inner-central-circle {
         width: 200px;
