@@ -4,7 +4,7 @@
 \*------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 h1, h2, h3, h4, h5, h6 {
-  color: #F2EFDF;
+  color: #846f5c;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Cinzel", serif; }
@@ -165,7 +165,7 @@ main {
     # Simple Typography Settings
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  color: #F2EFDF;
+  color: #846f5c;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Cinzel", serif; }
