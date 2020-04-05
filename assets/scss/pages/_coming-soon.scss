@@ -194,17 +194,17 @@ main {
 }
 
 .main-heading h1 {
-  animation: fadein 13s;
-  -moz-animation: fadein 13s; /* Firefox */
-  -webkit-animation: fadein 13s; /* Safari and Chrome */
-  -o-animation: fadein 13s; /* Opera */
+  animation: fadein 11s;
+  -moz-animation: fadein 11s; /* Firefox */
+  -webkit-animation: fadein 11s; /* Safari and Chrome */
+  -o-animation: fadein 11s; /* Opera */
 }
 
 .subtitle-desktop h2, .subtitle-mobile h2 {
-  animation: fadein 13s;
-  -moz-animation: fadein 13s; /* Firefox */
-  -webkit-animation: fadein 13s; /* Safari and Chrome */
-  -o-animation: fadein 13s; /* Opera */
+  animation: fadein 11s;
+  -moz-animation: fadein 11s; /* Firefox */
+  -webkit-animation: fadein 11s; /* Safari and Chrome */
+  -o-animation: fadein 11s; /* Opera */
 }
 
 @keyframes fadein {

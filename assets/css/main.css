@@ -27,16 +27,8 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #100F0B;
+  background-color: #100f0b;
   z-index: 1000000; }
-
-.preloader:before {
-  content: 'Loading';
-  position: absolute;
-  font-size: 12em;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: rgba(16, 15, 11, 0.03); }
 
 .preloader .counter {
   position: relative;
@@ -51,17 +43,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .hide {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .8s;
+  transition: .8s;
   pointer-events: none; }
 
 .preloader.active {
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
-  -webkit-transition: ease-in-out 1000ms;
-  transition: ease-in-out 1000ms;
+  -webkit-transition: ease-in-out 800ms;
+  transition: ease-in-out 800ms;
   -webkit-transition-delay: .8s;
           transition-delay: .8s; }
+
+@media (max-width: 520px) {
+  .preloader .counter {
+    font-size: 9em; } }
 
 html, body {
   height: 100%;
@@ -352,21 +348,21 @@ main {
             transform: rotate(0deg); } }
 
 .main-heading h1 {
-  animation: fadein 13s;
-  -moz-animation: fadein 13s;
+  animation: fadein 11s;
+  -moz-animation: fadein 11s;
   /* Firefox */
-  -webkit-animation: fadein 13s;
+  -webkit-animation: fadein 11s;
   /* Safari and Chrome */
-  -o-animation: fadein 13s;
+  -o-animation: fadein 11s;
   /* Opera */ }
 
 .subtitle-desktop h2, .subtitle-mobile h2 {
-  animation: fadein 13s;
-  -moz-animation: fadein 13s;
+  animation: fadein 11s;
+  -moz-animation: fadein 11s;
   /* Firefox */
-  -webkit-animation: fadein 13s;
+  -webkit-animation: fadein 11s;
   /* Safari and Chrome */
-  -o-animation: fadein 13s;
+  -o-animation: fadein 11s;
   /* Opera */ }
 
 @keyframes fadein {
