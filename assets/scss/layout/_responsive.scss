@@ -1,197 +1,55 @@
-// Responsive breakpoints variables
-$small-devices: 576px;
-$medium-devices: 768px;
-$large-devices: 992px;
-$extra-large: 1200px;
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: $small-devices) { 
+  h1 {
+    font-size: 2rem;
+  }
 
-    .subtitle-mobile {
-        display: block;
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-    .subtitle-desktop {
-        display: none;
-    }
-
-    .inner-central-circle {
-        width: 130px;
-        height: 130px;
-    }
-
-    .inner-central-dash {
-        width: 180px;
-        height: 180px;
-    }
-
-    .polygons {
-        width: 240px;
-        height: 240px;
-    }
-
-    .main-inner-circle {
-        height: 244px;
-        width: 244px;
-    }
-
-    .main-circle-dash {
-        height: 270px;
-        width: 270px;
-    }
-
-    .main-outer-circle {
-        height: 285px;
-        width: 285px;
-    }
-
-    .symbol {
-        width: 50px;
-    }
-
-    .brand-logo {
-        width: 100px;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    .wrapper {
-        padding: 15px;
-    }
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: $medium-devices) { 
-
-    .subtitle-mobile {
-        display: none;
-    }
-
-    .subtitle-desktop {
-        display: block;
-    }
-
-    .inner-central-circle {
-        width: 200px;
-        height: 200px;
-    }
-
-    .inner-central-dash {
-        width: 250px;
-        height: 250px;
-    }
-
-    .polygons {
-        width: 330px;
-        height: 330px;
-    }
-
-    .main-inner-circle {
-        height: 334px;
-        width: 334px;
-    }
-
-    .main-circle-dash {
-        height: 370px;
-        width: 370px;
-    }
-
-    .main-outer-circle {
-        height: 390px;
-        width: 390px;
-    }
-
-    .symbol {
-        width: 70px;
-    }
-
-    .brand-logo {
-        width: 180px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .wrapper {
-        padding: 35px;
-    }
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: $large-devices) { 
-
-    .subtitle-mobile {
-        display: none;
-    }
-
-    .subtitle-desktop {
-        display: block;
-    }
-
-    .inner-central-circle {
-        width: 200px;
-        height: 200px;
-    }
-
-    .inner-central-dash {
-        width: 250px;
-        height: 250px;
-    }
-
-    .polygons {
-        width: 330px;
-        height: 330px;
-    }
-
-    .main-inner-circle {
-        height: 334px;
-        width: 334px;
-    }
-
-    .main-circle-dash {
-        height: 370px;
-        width: 370px;
-    }
-
-    .main-outer-circle {
-        height: 390px;
-        width: 390px;
-    }
-
-    .brand-logo {
-        width: 180px;
-    }
-
-    .symbol {
-        width: 80px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-
-    .wrapper {
-        padding: 35px;
-    }
-
+  .img-responsive {
+    width: 100%;
+  }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: $extra-large) { 
+@media screen and (min-width: 800px) {
+
+    .column {
+      flex: 1;
+    }
+
+    ._25 {
+        flex: 2.5;
+    }
+
+    ._55 {
+        flex: 5.5;
+    }
+
+    ._20 {
+        flex: 2;
+    }
+
+    aside {
+        flex: 2.5;
+    }
     
- }
+    article {
+        flex: 7.5;
+    }
+  }
+
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }

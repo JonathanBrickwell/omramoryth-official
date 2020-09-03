@@ -1,13 +1,7 @@
-@import 'abstracts/abstracts';
-@import 'abstracts/mixins';
-
-@import 'base/typography';
+@import 'abstracts/variables';
 @import 'base/reset';
-
-@import 'components/buttons';
-@import 'components/preloader';
-
+@import 'base/typography';
+@import 'components/menu';
 @import 'layout/grid';
 @import 'layout/responsive';
-
-@import 'pages/coming-soon';
+@import 'pages/homepage';

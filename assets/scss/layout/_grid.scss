@@ -1,32 +1,71 @@
-@import "../abstracts/variables";
-
-html, body {
-    height: 100%;
-    margin: 0;
- }
-
-main {
-    height: 100%;
-}
+// Basic Grid Elements
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    max-width: 100%;
 }
 
-.container-middle {
+.row {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    flex-direction: row;
+    align-items: center
+}
+  
+.column {
+    flex-basis: 100%;
+    padding: 15px;
+    background: $background;;
 }
 
 .wrapper {
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px;
 }
 
+// Width & Height 
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+// Centering
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article,
+aside {
+    flex-basis: 100%;
+}
