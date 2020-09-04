@@ -16,8 +16,10 @@
     font-weight: bolder;
 }
 
-body, html {
-    font-family: 'Cinzel', sans-serif;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,5 +38,16 @@ h2 {
 }
 
 a {
-    color: transparent;
+    color: $highlight;
+}
+
+.transparent {
+    color: transparent !important;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: $textColor;
 }

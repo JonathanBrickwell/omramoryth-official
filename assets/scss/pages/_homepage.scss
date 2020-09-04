@@ -11,10 +11,14 @@ body {
 
 .highlight {
     color: $highlight;
+    font-weight: bold;
 }
 
-.img-responsive {
-    width: 75%;
+.img {
     height: auto;
+}
+
+.inline {
+    display: inline-block;
 }
 

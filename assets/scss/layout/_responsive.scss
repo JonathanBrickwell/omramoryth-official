@@ -1,17 +1,32 @@
 @media screen and (min-width:320px) and (max-width: 768px) {
+
   .row {
     flex-direction: column;
   }
 
+  .column-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .img-responsive {
+    width: 100%;
+  }
+
+  .column-centered {
+    padding: 0 5% 0 5%;
+  }
+
+  .img {
     width: 100%;
   }
 }
@@ -40,8 +55,17 @@
     
     article {
         flex: 7.5;
+    } 
+
+    .column-centered {
+      padding: 0 25% 0 25%;
     }
-  }
+
+    .img {
+      width: 75%;
+    }
+  
+}
 
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
