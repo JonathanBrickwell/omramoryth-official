@@ -1,23 +1,4 @@
-@font-face {
-    font-family: 'Cinzel';
-    src: url('/assets/fonts/Cinzel-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('/assets/fonts/Cinzel-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cinzel';
-    src: url('/assets/fonts/Cinzel-Black.ttf') format('truetype');
-    font-weight: bolder;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap');
 
 @font-face {
     font-family: 'Montserrat';
@@ -27,7 +8,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cinzel', sans-serif;
+    font-family: 'Cinzel', serif;
     color: $textColor;
     font-weight: bold;
     text-transform: uppercase;
