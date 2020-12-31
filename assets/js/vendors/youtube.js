@@ -18,8 +18,8 @@ function extractYouTubeVideoID(clickedItem) {
 
 function onYouTubeIframeAPIReady(videoID) {
     player = new YT.Player(videoID, {
-        height: '360',
-        width: '720',
+        height: "100%",
+        width: "100%",
         videoId: videoID,
         events: {
             'onReady': onPlayerReady,
