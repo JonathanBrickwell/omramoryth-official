@@ -1,1 +1,38 @@
-(function() { var v = document.getElementsByClassName("youtube-player"); for (var n = 0; n < v.length; n++) { v[n].onclick = function () { var iframe = document.createElement("iframe"); iframe.setAttribute("src", "//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ this.dataset.related +"&controls="+this.dataset.control+"&showinfo=" + this.dataset.info); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe"); iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); if (this.dataset.fullscreen == 1){ iframe.setAttribute("allowfullscreen", ""); } while (this.firstChild) { this.removeChild(this.firstChild); } this.appendChild(iframe); }; } })();
+let apiKey = "AIzaSyBDE4OwtZzeVDSxo-jL5hJ7FYXwHRzliZM";
+let player;
+
+let youTubeVideos = document.getElementsByClassName('img-responsive');
+
+(function initializeAPIScript() {
+    var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+})();
+
+function extractYouTubeVideoID(clickedItem) {
+    let youTubeVideoID = clickedItem.parentNode.getAttribute('id');
+    onYouTubeIframeAPIReady(youTubeVideoID);
+}
+
+function onYouTubeIframeAPIReady(videoID) {
+    player = new YT.Player(videoID, {
+        height: '360',
+        width: '720',
+        videoId: videoID,
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange 
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    console.log("Spreman je!");
+}
+
+function onPlayerStateChange(event) {
+    checkTheImageClick();
+    console.log("Promijenilo se stanje.")
+}
