@@ -1,7 +1,14 @@
-@import 'abstracts/variables';
-@import 'base/reset';
-@import 'base/typography';
-@import 'components/menu';
-@import 'layout/grid';
-@import 'layout/responsive';
-@import 'pages/homepage';
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/menu";
+@import "components/button";
+@import "components/images";
+@import "components/card";
+
+@import "layout/grid";
+@import "layout/responsive";
+
+@import "pages/homepage";

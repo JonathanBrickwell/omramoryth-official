@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "artistName": "Warp Chamber",
+        "albumName": "Implements of Excruciation",
+        "albumImage": "./assets/img/blogs/Warp Chamber/1.Warp-Chamber-featured.jpg",
+        "albumInfo": "blogs/warp-chamber.html"
+    },
+    {
+        "id": 2,
+        "artistName": "Of Feather And Bone",
+        "albumName": "Sulphuric Disintegration",
+        "albumImage": "./assets/img/blogs/Of Feather And Bone/offeatherandbone-featured.jpg",
+        "albumInfo": "blogs/of-feather-and-bone.html"
+    },
+    {
+        "id": 3,
+        "artistName": "Chthe'ilist",
+        "albumName": "Passage Into The Xexanotth",
+        "albumImage": "./assets/img/blogs/Chthe'ilist/chtheilist-featured.jpg",
+        "albumInfo": "#"
+    }
+]

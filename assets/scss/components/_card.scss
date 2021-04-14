@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba($color: #e2e2e2, $alpha: 0.7);
+  width: 100%;
+}
+
+.card-header {
+  display: flex;
+}
+
+.card-body h5 {
+  margin-bottom: 0px;
+}
+
+.card-body p {
+  margin-top: 5px;
+}

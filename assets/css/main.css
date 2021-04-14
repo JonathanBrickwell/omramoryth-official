@@ -1,266 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-display: swap; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cinzel', serif;
-  color: #EAF2F2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+  color: #eaf2f2;
   font-weight: bold;
   text-transform: uppercase; }
 
-h1 {
-  font-size: 4rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 1.6rem; }
-
 a {
-  color: #BFBCAA; }
+  font-family: "Montserrat", sans-serif;
+  color: #a8aaa2; }
 
 .transparent {
   color: transparent !important; }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.5em;
-  color: #EAF2F2; }
-
-#menuToggle {
-  display: block;
-  position: fixed;
-  top: 50px;
-  margin-left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none; }
-
-#menuToggle a {
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  color: #EAF2F2;
-  transition: color 0.3s ease;
-  text-transform: uppercase; }
-
-#menuToggle a:hover {
-  color: #EAF2F2; }
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none; }
-
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%; }
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%; }
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #EAF2F2; }
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2); }
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px); }
-
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #131313;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px; }
-
-#menuToggle input:checked ~ ul {
-  transform: none; }
-
-.container {
-  max-width: 100%; }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.column {
-  flex-basis: 100%;
-  padding: 15px;
-  background: #131313; }
-
-.wrapper {
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.w-100 {
-  width: 100%; }
-
-.w-50 {
-  width: 50%; }
-
-.h-50 {
-  height: 50%; }
-
-.h-100 {
-  height: 100vh; }
-
-.w-25 {
-  width: 25%; }
-
-.h-25 {
-  height: 25%; }
+  color: #eaf2f2; }
 
 .text-center {
   text-align: center; }
 
-.justify-center {
-  justify-content: center; }
+.highlight {
+  color: #a8aaa2; }
 
-section {
+.btn {
+  padding: 5px 25px 5px 25px;
+  border: 2px solid #a8aaa2;
+  background: transparent; }
+
+.btn:hover {
+  cursor: pointer;
+  background: #e2e2e2; }
+
+.btn:hover > a {
+  color: #131313;
+  text-decoration: none; }
+
+.btn a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none; }
+
+.card {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  border: 2px solid rgba(226, 226, 226, 0.7);
+  width: 100%; }
 
-article,
-aside {
+.card-header {
+  display: flex; }
+
+.card-body h5 {
+  margin-bottom: 0px; }
+
+.card-body p {
+  margin-top: 5px; }
+
+html {
+  width: fit-content; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+  color: #ccc;
+  background: #131313;
+  margin-bottom: 70px; }
+
+/* Grid */
+section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh; }
+
+.column {
   flex-basis: 100%; }
 
-.mb-2 {
-  margin-bottom: 20px; }
+.container {
+  width: 100%; }
+
+/* Style */
+.column {
+  padding: 15px;
+  margin: 5px 0;
+  background: #131313; }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+h1,
+h2 {
+  text-align: center; }
 
 .mrl-10 {
   margin: 0 10px 0 10px; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  iframe {
-    width: 100%;
-    height: 100%; }
-  .row {
-    flex-direction: column; }
-  .column-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
+.mb-2 {
+  margin-bottom: 20px; }
+
+.ml-2 {
+  margin-left: 20px; }
+
+.mr-2 {
+  margin-right: 20px; }
+
+.fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px; }
+
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: 2.1rem; }
+    font-size: 2.5rem; }
   h2 {
-    font-size: 1.8rem; }
-  .img-responsive {
-    width: 100%; }
-  .column-centered {
-    padding: 0 5% 0 5%; }
-  .img {
-    width: 100%; } }
+    font-size: 2rem; }
+  h3 {
+    font-size: 1rem; } }
 
 @media screen and (min-width: 800px) {
-  iframe {
-    height: 360px;
-    width: 720px; }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; }
   .column {
     flex: 1; }
   ._25 {
     flex: 2.5; }
-  ._55 {
-    flex: 5.5; }
-  ._20 {
-    flex: 2; }
-  aside {
-    flex: 2.5; }
-  article {
-    flex: 7.5; }
-  .column-centered {
-    padding: 0 25% 0 25%; }
-  .img {
-    width: 75%; } }
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px; }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px; } }
-
-html, body {
-  background: #131313;
-  height: 100%; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.highlight {
-  color: #BFBCAA;
-  font-weight: bold; }
-
-.img {
-  height: auto; }
+  ._5 {
+    flex: 5; }
+  iframe {
+    height: 360px;
+    width: 720px; }
+  .mprl-20p {
+    padding: 0 250px 0 250px; }
+  h1 {
+    font-size: 3.5rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; } }
 
 .inline {
-  display: inline-block; }
+  display: inline; }
