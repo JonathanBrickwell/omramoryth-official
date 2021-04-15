@@ -16,7 +16,8 @@ h6 {
   font-weight: bold;
   text-transform: uppercase; }
 
-a {
+a,
+button {
   font-family: "Montserrat", sans-serif;
   color: #a8aaa2; }
 
@@ -54,7 +55,13 @@ p {
   text-decoration: none; }
 
 .btn.big {
+  color: #e2e2e2;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 15px 30px 15px 30px; }
+
+.btn.big:hover {
+  color: #131313; }
 
 .card {
   display: flex;
@@ -112,6 +119,12 @@ h2 {
 
 .mb-4 {
   margin-bottom: 40px; }
+
+.mt-2 {
+  margin-top: 20px; }
+
+.mt-4 {
+  margin-top: 40px; }
 
 .mb-5 {
   margin-bottom: 50px; }
