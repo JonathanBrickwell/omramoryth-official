@@ -64,7 +64,7 @@ p {
   color: #131313; }
 
 .btn.see-more {
-  width: 100px; }
+  width: 100%; }
 
 .card {
   display: flex;
