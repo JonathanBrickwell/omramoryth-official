@@ -78,7 +78,8 @@ p {
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 20px 0 20px; }
 
 .card-body h5 {
   margin-bottom: 0px; }
