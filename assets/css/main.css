@@ -72,6 +72,11 @@ p {
 .card-header {
   display: flex; }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .card-body h5 {
   margin-bottom: 0px; }
 
